@@ -1,9 +1,10 @@
 .PHONY: benchmark clean
 
-BENCHMARK_SCRIPT=benchmark.py
-
 benchmark:
-	python3 $(BENCHMARK_SCRIPT)
+	python3 benchmark.py
+
+benchmark_dft:
+	python3 benchmark_dft.py
 
 clean:
 	rm -f *.pyc
